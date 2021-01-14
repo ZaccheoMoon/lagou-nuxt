@@ -26,7 +26,8 @@
       <div class="row">
 
         <div class="col-xs-12 col-md-8 offset-md-2">
-          <article-comments :article="article" />
+          <ArticleComment v-if="user" :article="article" />
+          <ArticleUnlogin v-else />
         </div>
 
       </div>
@@ -42,9 +43,10 @@ import { getArticle } from '@/api/article'
 import articleMeta from './components/article-meta.vue'
 import ArticleMeta from './components/article-meta'
 import ArticleComments from './components/article-comments'
+import ArticleUnlogin from './components/article-unlogin'
 
 export default {
-  components: { ArticleMeta, ArticleComments },
+  components: { ArticleMeta, ArticleComments, ArticleUnlogin },
   name: 'ArticleIndex',
   async asyncData ({ params }) {
     const { data } = await getArticle(params.slug)

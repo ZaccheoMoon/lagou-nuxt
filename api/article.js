@@ -49,3 +49,54 @@ export const getComments = (slug) => {
     url: `/api/articles/${slug}/comments`
   })
 }
+
+// 添加关注
+export const addFollow = username => {
+  return request({
+    method: 'POST',
+    url: `/api/profiles/${username}/follow`,
+  })
+}
+
+// 取消关注
+export const deleteFollow = username => {
+  return request({
+    method: 'DELETE',
+    url: `/api/profiles/${username}/follow`,
+  })
+}
+
+// 发表文章
+export const createArticle = data => {
+  return request({
+    method: 'POST',
+    url: '/api/articles',
+    data
+  })
+}
+
+// 删除文章
+export const deleteArticle = slug => {
+  return request({
+    method: 'DELETE',
+    url: `/api/articles/${slug}`,
+  })
+}
+
+// 更新文章详情
+export const updateArticle = (slug, data) => {
+  return request({
+    method: 'PUT',
+    url: `/api/articles/${slug}`,
+    data
+  })
+}
+
+// 评论文章
+export const addComment = (slug, data) => {
+  return request({
+    method: 'POST',
+    url: `/api/articles/${slug}/comments`,
+    data
+  })
+}

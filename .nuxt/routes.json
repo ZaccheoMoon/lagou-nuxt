@@ -1,51 +1,43 @@
 [
   {
     "path": "/",
-    "component": "/Users/Yue/Documents/Git/nuxt-test/pages/layout",
+    "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/layout",
     "children": [
       {
         "path": "",
         "name": "home",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/home",
-        "_name": "_4211db97"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/home"
       },
       {
         "path": "/login",
         "name": "login",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/login",
-        "_name": "_0061dfb1"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/login"
       },
       {
         "path": "/register",
         "name": "register",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/login",
-        "_name": "_0061dfb1"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/login"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/profile",
-        "_name": "_488f87f1"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/profile"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/settings",
-        "_name": "_5aa186db"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/settings"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/editor",
-        "_name": "_01638bb6"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/editor"
       },
       {
         "path": "/article/:slug",
         "name": "article",
-        "component": "/Users/Yue/Documents/Git/nuxt-test/pages/article",
-        "_name": "_2f59cb3e"
+        "component": "/Users/Yue/Documents/Git/lagou-nuxt/pages/article"
       }
-    ],
-    "_name": "_0b1d13e2"
+    ]
   }
 ]
